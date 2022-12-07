@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee36c0ff09.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Чайная лавка</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="container nav">
+                <li>
+                    <a href="#" class="logo">Чайная лавка</a>
+                </li>
+                <li>
+                    <a href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+                <li>
+                    <div class="site-search">
+                        <input type="search" id="search-input">
+                        <div>
+                            <button type="button" id="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="container">
+        <div class="filters">
+            <div class="filters-sort">
+              <label for="sort">Сортировка:</label>
+              <select name="sort" id="sort">
+                <option selected value="alphabet">По алфавиту</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="rating">Рейтинг</option>
+              </select>
+            </div>
+          </div>
+        <section id="shop-items">
+        </section>
+        <p id="nothing-found" class="not-found"></p>
+      </main>
+      <footer id="contacts " class="container">
+        <a href="# " class="logo ">Чайная лавка</a>
+      </footer>
+      <template id="item-template">
+        <div class="shop-item">
+          <img src=" ">
+          <div class="content">
+            <div class="tags"></div>
+            <h1></h1>
+            <p></p>
+          </div>
+          <div class="footer">
+            <span class="price"></span>
+            <div class="rating"></div>
+          </div>
+        </div>
+      </template>
+      <script src="script.js"></script>
+    </body>
+    </html>
+</body>
+
+</html>

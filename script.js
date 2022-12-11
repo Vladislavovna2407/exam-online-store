@@ -35,7 +35,7 @@ const items = [{
         description: "Чайный напиток из цветков Гибискуса.",
         tags: ["hibiscus"],
         price: 6.00,
-        rating: 3.1,
+        rating: 1,
         img: "./img/hibiscus.jpeg",
     },
     {
@@ -102,7 +102,7 @@ const itemTemplate = document.querySelector("#item-template");
 const nothingFound = document.querySelector("#nothing-found");
 
 function prepareShop(shopItems) {
-    const { title, description, tags, price, img } = shopItems;
+    const { title, description, tags, price, img, rating } = shopItems;
     const item = itemTemplate.content.cloneNode(true);
     item.querySelector("h1").textContent = title;
     item.querySelector("p").textContent = description;
@@ -112,7 +112,7 @@ function prepareShop(shopItems) {
 
     const ratingContainer = item.querySelector(".rating");
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < rating; i++) {
         const star = document.createElement("i");
         star.classList.add("fa", "fa-star");
         ratingContainer.append(star);

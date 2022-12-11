@@ -188,7 +188,7 @@ sortControl.addEventListener("change", (event) => {
 
         case "rating":
             {
-                currentState((a, b) => b.rating - a.rating)
+                currentState.sort((a, b) => b.rating - a.rating)
                 break;
             }
     }
